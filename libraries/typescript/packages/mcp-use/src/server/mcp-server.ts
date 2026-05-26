@@ -3309,10 +3309,9 @@ class MCPServerClass<HasOAuth extends boolean = false> {
    */
   public resolveSecuritySchemes(
     config: ToolDefinition
-  ):
-    | NonNullable<ServerConfig["defaultSecuritySchemes"]>
-    | undefined {
-    const schemes = config.securitySchemes ?? this.config.defaultSecuritySchemes;
+  ): NonNullable<ServerConfig["defaultSecuritySchemes"]> | undefined {
+    const schemes =
+      config.securitySchemes ?? this.config.defaultSecuritySchemes;
     return schemes && schemes.length > 0 ? schemes : undefined;
   }
 
