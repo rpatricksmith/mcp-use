@@ -1,0 +1,18 @@
+{
+  "anaVersion": "1.1.5",
+  "name": "mcp-use",
+  "language": null,
+  "framework": null,
+  "packageManager": null,
+  "commands": {
+    "build": null,
+    "test": null,
+    "lint": null,
+    "dev": null
+  },
+  "coAuthor": "Ana <build@anatomia.dev>",
+  "artifactBranch": "main",
+  "branchPrefix": "feature/",
+  "lastScanAt": "2026-05-29T03:20:26.101Z",
+  "custom": {}
+}

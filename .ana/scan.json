@@ -1,0 +1,706 @@
+{
+  "schemaVersion": "1.0",
+  "applicationShape": "unknown",
+  "overview": {
+    "project": "mcp-use",
+    "scannedAt": "2026-05-29T03:20:26.101Z",
+    "depth": "deep"
+  },
+  "stack": {
+    "language": null,
+    "framework": null,
+    "database": null,
+    "auth": null,
+    "testing": [],
+    "payments": null,
+    "workspace": null,
+    "aiSdk": null,
+    "uiSystem": null
+  },
+  "stackProvenance": {},
+  "versions": {},
+  "files": {
+    "source": 734,
+    "test": 166,
+    "config": 100,
+    "total": 1000
+  },
+  "structure": [
+    {
+      "path": ".github/",
+      "purpose": "GitHub config"
+    },
+    {
+      "path": "docs/",
+      "purpose": "Documentation"
+    },
+    {
+      "path": "examples/",
+      "purpose": "Example code"
+    },
+    {
+      "path": "static/",
+      "purpose": "Static files"
+    }
+  ],
+  "commands": {
+    "build": null,
+    "test": null,
+    "lint": null,
+    "dev": null,
+    "all": {},
+    "packageManager": null
+  },
+  "git": {
+    "head": "b7ec5c1c",
+    "branch": "main",
+    "commitCount": 923,
+    "lastCommitAt": "2026-05-19T18:55:14+02:00",
+    "uncommittedChanges": false,
+    "contributorCount": 76,
+    "defaultBranch": "main",
+    "branches": [
+      "add-openapi-to-mcp-skill",
+      "alert-autofix-79",
+      "alert-autofix-82",
+      "canary",
+      "chore/deps/canary-fixes",
+      "chore/host-context7-json-mintlify",
+      "chore/inspector/clean-deps",
+      "chore/mango/chages-screenshot",
+      "chore/mcp-use/dedup-peer-dep",
+      "chore/mcp-use/update-mcp-ui",
+      "chore/readme-branded-header",
+      "chore/templates/fix-deps",
+      "chore/update-mcp-sdk-fork-1.24.3-mcp-use.2",
+      "claude/confident-einstein",
+      "claude/frosty-maxwell-40acc6",
+      "claude/frosty-wu-df62d7",
+      "cli-client-no-default-session",
+      "codex/typescript-context7-json",
+      "copilot/sub-pr-405",
+      "copilot/sub-pr-431",
+      "copilot/sub-pr-431-again",
+      "custom-cdp-url",
+      "device-flow-2",
+      "docs/fix-broken-readme-links-v2",
+      "docs/typescript/expose-response-helpers",
+      "experimental/skills-support",
+      "feat/add-ollama-provider-support",
+      "feat/cli-nextjs-drop-in",
+      "feat/cli/orgs",
+      "feat/demo",
+      "feat/error-boundary-fallback",
+      "feat/experimental/litellm",
+      "feat/experimental/server",
+      "feat/inspector-openapi-bridge",
+      "feat/inspector/data-stream",
+      "feat/inspector/login",
+      "feat/inspector/tunnel-badge",
+      "feat/langchain_port",
+      "feat/model-context",
+      "feat/oauth-better-auth-in-process",
+      "feat/python/context-elicit-url",
+      "feat/python/middleware-init",
+      "feat/python/stdio_timeout",
+      "feat/readme-templates",
+      "feat/screenshot-mcp-headers",
+      "feat/server-landing/deeplinks",
+      "feat/server/dynamic-mcp-url",
+      "feat/typescript/agent-does-not-fail-on-schema-error",
+      "feat/typescript/clerk-OAuth-provider",
+      "feature/mcp-1000-claim-context7-docs",
+      "feature/mcp-1365-mcp-builder-skill-fails-to-parse-due-to-code-block-handling",
+      "feature/mcp-1387-feat-add-clerk-oauth-provider-for-typescript",
+      "feature/mcp-1399-add-pre-registered-oauth-client-id-support-to-inspector",
+      "feature/mcp-1436-add-custom-middleware-hooks",
+      "feature/mcp-1566-mcp-use-screenshot-cli-visual-feedback-loop-for-widget",
+      "feature/mcp-1569-improve-typescript-mcp-server-logs",
+      "feature/mcp-1624-google-provider-in-chat-inspector-broken",
+      "feature/mcp-1649-inspector-thinking-indicator-persists-after-stream-done",
+      "feature/mcp-1666-missing-better-auth-icon-in-documentation",
+      "feature/mcp-1667-rearrange-documentation-sidebar-mcp-server-mcp-client-mcp",
+      "feature/mcp-1670-cli-login-org-selection-should-accept-a-org-flag-for-non",
+      "feature/mcp-1676-oauth-proxy-mode-doesnt-forward-clientidclientsecret-to",
+      "feature/mcp-1702-refactor-typescript-oauth-providers",
+      "feature/mcp-1707-adopt-knip-to-find-and-remove-unused-code",
+      "feature/mcp-1710-hosted-inspector-missing-opengraph-image-title-and",
+      "feature/mcp-1713-inspector-switching-from-via-proxy-direct-fails-with",
+      "feature/mcp-1730-changing-the-inspector-header-broke-an-end-to-end-inspector",
+      "feature/mcp-1733-esm-import-resolution-fix",
+      "feature/mcp-1741-widget-overlays-the-header",
+      "feature/mcp-1747-mcp-use-start-doesnt-auto-discover-ports",
+      "feature/mcp-1753-templates-are-broken",
+      "feature/mcp-1812-consolidate-and-clean-up-deprecated-skills-mcp-builder",
+      "feature/mcp-1813-document-flag-inspector-no-open-somewhere-in-the-docs",
+      "feature/mcp-1903-mcp-cloud-chat-leaks-local-model-selector-ui",
+      "feature/mcp-1913-cloud-chat-server-name-and-model-selector-overlap-on-first",
+      "feature/mcp-1931-supabase-oauth-provider-docs-describe-a-flow-the-code-doesnt",
+      "feature/mcp-1941-check-inspector-chat-and-claude-chat-conversion-of-mcp-image",
+      "feature/mcp-1971-public-chat-silently-swallows-llm-provider-errors-eg",
+      "feature/mcp-1995-cli-mcp-use-deploy-env-keyval-does-not-propagate-the-env-var",
+      "feature/mcp-2065-check-that-mcp-apps-builder-skill-references-oauth-templates",
+      "feature/mcp-2074-configurable-base-path-automatic-csp-widget-asset-path-oauth",
+      "feature/mcp-2094-make-sure-mcp-use-cli-client-is-agent-ready",
+      "feature/mcp-2111-inspector-authentication-clashes-with-mcp-authentication",
+      "feature/mcp-2125-add-authentication-gating-for-app-tools",
+      "feature/mcp-2165-move-screenshot-command-under-client-namespace",
+      "feature/mcp-2170-clarify-auth0-redirect-uri-setup-in-docs",
+      "feature/mcp-2174-mcpclient-has-no-first-class-way-to-advertise-client",
+      "feature/mcp-2183-oauthsupabaseprovider-should-support-local-supabase-dev",
+      "feature/mcp-2184-mcp-use-crashes-with-import_chalkdefaultgray-error",
+      "feature/mcp-2222-add-fromopenapi-constructor-to-mcp-use-v2-ts",
+      "fix/MCP-1624-inspector-google-provider-d6ed",
+      "fix/cli/deplopyment",
+      "fix/cli/deployment-gitjub",
+      "fix/cli/git-create",
+      "fix/cli/handle-401",
+      "fix/cli/no-error-swallowing",
+      "fix/cli/y-flag",
+      "fix/codeql-ollama-redos",
+      "fix/create-app-chatgpt-tool-hints",
+      "fix/ctx-auth-optional-typing",
+      "fix/doc-link-errors",
+      "fix/ins-ali-con-et",
+      "fix/inspector-chat",
+      "fix/inspector-hono-duck-type",
+      "fix/inspector-knip-tabcountbadge-barrel",
+      "fix/inspector-mcp-use-peer-dep",
+      "fix/inspector-oauth-callback",
+      "fix/inspector-restore-mcp-use-dep",
+      "fix/inspector-thinking-indicator-parts-1edd",
+      "fix/inspector/add-disabled-tools-prop",
+      "fix/inspector/chat-tool-args",
+      "fix/inspector/langchain-import",
+      "fix/inspector/remove-langchain",
+      "fix/inspector/runtime-chat-url",
+      "fix/mcp-use/remove-private-from-dts",
+      "fix/meta/improve-error-handling",
+      "fix/oauth-flow-popup",
+      "fix/oauth-reconnect-session-storage",
+      "fix/provider/color-scheme",
+      "fix/python/langchain-adapter-pickle-issue-734",
+      "fix/remove-dead-typescript-precommit-hook",
+      "fix/revert-strip-internal",
+      "fix/switching-env-causes-broken-state",
+      "fix/tel/suppress-errors",
+      "fix/template-sdk-typing-issues",
+      "fix/useffect-servers",
+      "fix/widget-dev-deps-504",
+      "fix/windows/builde",
+      "inspector-theme-toggle",
+      "inspector-ui-improvements",
+      "inspector-ui-improvements-v2",
+      "khandrew1/auth0-fixes",
+      "khandrew1/better-auth-provider",
+      "khandrew1/fix-duplicate-oauth-callback",
+      "khandrew1/fix-inspector-telemetry",
+      "main",
+      "major/cli/device-flow",
+      "python/feat/langchain-structured",
+      "refactor-base-paths",
+      "refactor/oauth-client-provider-session-store",
+      "release/exit-prerelease-1774267832",
+      "release/exit-prerelease-1774426783",
+      "release/exit-prerelease-1774444630",
+      "release/exit-prerelease-1774599582",
+      "release/exit-prerelease-1775817092",
+      "release/exit-prerelease-1775820383",
+      "release/exit-prerelease-1776281341",
+      "release/exit-prerelease-1776759800",
+      "release/exit-prerelease-1776945636",
+      "release/exit-prerelease-1777403537",
+      "release/exit-prerelease-1777541034",
+      "release/exit-prerelease-1778109641",
+      "release/exit-prerelease-1778518512",
+      "release/exit-prerelease-1778768699",
+      "revert-1292-major/cli/device-flow",
+      "revert-1465-docs/fix-broken-readme-links",
+      "screenshot-error-tool",
+      "upstream/add-openapi-to-mcp-skill",
+      "upstream/alert-autofix-79",
+      "upstream/alert-autofix-82",
+      "upstream/canary",
+      "upstream/chore/deps/canary-fixes",
+      "upstream/chore/host-context7-json-mintlify",
+      "upstream/chore/inspector/clean-deps",
+      "upstream/chore/mango/chages-screenshot",
+      "upstream/chore/mcp-use/dedup-peer-dep",
+      "upstream/chore/mcp-use/update-mcp-ui",
+      "upstream/chore/readme-branded-header",
+      "upstream/chore/templates/fix-deps",
+      "upstream/chore/update-mcp-sdk-fork-1.24.3-mcp-use.2",
+      "upstream/claude/confident-einstein",
+      "upstream/claude/frosty-maxwell-40acc6",
+      "upstream/claude/frosty-wu-df62d7",
+      "upstream/cli-client-no-default-session",
+      "upstream/codex/typescript-context7-json",
+      "upstream/copilot/sub-pr-405",
+      "upstream/copilot/sub-pr-431",
+      "upstream/copilot/sub-pr-431-again",
+      "upstream/custom-cdp-url",
+      "upstream/device-flow-2",
+      "upstream/docs/fix-broken-readme-links-v2",
+      "upstream/docs/typescript/expose-response-helpers",
+      "upstream/experimental/skills-support",
+      "upstream/feat/add-ollama-provider-support",
+      "upstream/feat/cli-nextjs-drop-in",
+      "upstream/feat/cli/orgs",
+      "upstream/feat/demo",
+      "upstream/feat/error-boundary-fallback",
+      "upstream/feat/experimental/litellm",
+      "upstream/feat/experimental/server",
+      "upstream/feat/inspector-openapi-bridge",
+      "upstream/feat/inspector/data-stream",
+      "upstream/feat/inspector/login",
+      "upstream/feat/inspector/tunnel-badge",
+      "upstream/feat/langchain_port",
+      "upstream/feat/model-context",
+      "upstream/feat/oauth-better-auth-in-process",
+      "upstream/feat/python/context-elicit-url",
+      "upstream/feat/python/middleware-init",
+      "upstream/feat/python/stdio_timeout",
+      "upstream/feat/readme-templates",
+      "upstream/feat/screenshot-mcp-headers",
+      "upstream/feat/server-landing/deeplinks",
+      "upstream/feat/server/dynamic-mcp-url",
+      "upstream/feat/typescript/agent-does-not-fail-on-schema-error",
+      "upstream/feat/typescript/clerk-OAuth-provider",
+      "upstream/feature/mcp-1000-claim-context7-docs",
+      "upstream/feature/mcp-1365-mcp-builder-skill-fails-to-parse-due-to-code-block-handling",
+      "upstream/feature/mcp-1387-feat-add-clerk-oauth-provider-for-typescript",
+      "upstream/feature/mcp-1399-add-pre-registered-oauth-client-id-support-to-inspector",
+      "upstream/feature/mcp-1436-add-custom-middleware-hooks",
+      "upstream/feature/mcp-1566-mcp-use-screenshot-cli-visual-feedback-loop-for-widget",
+      "upstream/feature/mcp-1569-improve-typescript-mcp-server-logs",
+      "upstream/feature/mcp-1624-google-provider-in-chat-inspector-broken",
+      "upstream/feature/mcp-1649-inspector-thinking-indicator-persists-after-stream-done",
+      "upstream/feature/mcp-1666-missing-better-auth-icon-in-documentation",
+      "upstream/feature/mcp-1667-rearrange-documentation-sidebar-mcp-server-mcp-client-mcp",
+      "upstream/feature/mcp-1670-cli-login-org-selection-should-accept-a-org-flag-for-non",
+      "upstream/feature/mcp-1676-oauth-proxy-mode-doesnt-forward-clientidclientsecret-to",
+      "upstream/feature/mcp-1702-refactor-typescript-oauth-providers",
+      "upstream/feature/mcp-1707-adopt-knip-to-find-and-remove-unused-code",
+      "upstream/feature/mcp-1710-hosted-inspector-missing-opengraph-image-title-and",
+      "upstream/feature/mcp-1713-inspector-switching-from-via-proxy-direct-fails-with",
+      "upstream/feature/mcp-1730-changing-the-inspector-header-broke-an-end-to-end-inspector",
+      "upstream/feature/mcp-1733-esm-import-resolution-fix",
+      "upstream/feature/mcp-1741-widget-overlays-the-header",
+      "upstream/feature/mcp-1747-mcp-use-start-doesnt-auto-discover-ports",
+      "upstream/feature/mcp-1753-templates-are-broken",
+      "upstream/feature/mcp-1812-consolidate-and-clean-up-deprecated-skills-mcp-builder",
+      "upstream/feature/mcp-1813-document-flag-inspector-no-open-somewhere-in-the-docs",
+      "upstream/feature/mcp-1903-mcp-cloud-chat-leaks-local-model-selector-ui",
+      "upstream/feature/mcp-1913-cloud-chat-server-name-and-model-selector-overlap-on-first",
+      "upstream/feature/mcp-1931-supabase-oauth-provider-docs-describe-a-flow-the-code-doesnt",
+      "upstream/feature/mcp-1941-check-inspector-chat-and-claude-chat-conversion-of-mcp-image",
+      "upstream/feature/mcp-1971-public-chat-silently-swallows-llm-provider-errors-eg",
+      "upstream/feature/mcp-1995-cli-mcp-use-deploy-env-keyval-does-not-propagate-the-env-var",
+      "upstream/feature/mcp-2065-check-that-mcp-apps-builder-skill-references-oauth-templates",
+      "upstream/feature/mcp-2074-configurable-base-path-automatic-csp-widget-asset-path-oauth",
+      "upstream/feature/mcp-2094-make-sure-mcp-use-cli-client-is-agent-ready",
+      "upstream/feature/mcp-2111-inspector-authentication-clashes-with-mcp-authentication",
+      "upstream/feature/mcp-2125-add-authentication-gating-for-app-tools",
+      "upstream/feature/mcp-2165-move-screenshot-command-under-client-namespace",
+      "upstream/feature/mcp-2170-clarify-auth0-redirect-uri-setup-in-docs",
+      "upstream/feature/mcp-2174-mcpclient-has-no-first-class-way-to-advertise-client",
+      "upstream/feature/mcp-2183-oauthsupabaseprovider-should-support-local-supabase-dev",
+      "upstream/feature/mcp-2184-mcp-use-crashes-with-import_chalkdefaultgray-error",
+      "upstream/feature/mcp-2222-add-fromopenapi-constructor-to-mcp-use-v2-ts",
+      "upstream/fix/MCP-1624-inspector-google-provider-d6ed",
+      "upstream/fix/cli/deplopyment",
+      "upstream/fix/cli/deployment-gitjub",
+      "upstream/fix/cli/git-create",
+      "upstream/fix/cli/handle-401",
+      "upstream/fix/cli/no-error-swallowing",
+      "upstream/fix/cli/y-flag",
+      "upstream/fix/codeql-ollama-redos",
+      "upstream/fix/create-app-chatgpt-tool-hints",
+      "upstream/fix/ctx-auth-optional-typing",
+      "upstream/fix/doc-link-errors",
+      "upstream/fix/ins-ali-con-et",
+      "upstream/fix/inspector-chat",
+      "upstream/fix/inspector-hono-duck-type",
+      "upstream/fix/inspector-knip-tabcountbadge-barrel",
+      "upstream/fix/inspector-mcp-use-peer-dep",
+      "upstream/fix/inspector-oauth-callback",
+      "upstream/fix/inspector-restore-mcp-use-dep",
+      "upstream/fix/inspector-thinking-indicator-parts-1edd",
+      "upstream/fix/inspector/add-disabled-tools-prop",
+      "upstream/fix/inspector/chat-tool-args",
+      "upstream/fix/inspector/langchain-import",
+      "upstream/fix/inspector/remove-langchain",
+      "upstream/fix/inspector/runtime-chat-url",
+      "upstream/fix/mcp-use/remove-private-from-dts",
+      "upstream/fix/meta/improve-error-handling",
+      "upstream/fix/oauth-flow-popup",
+      "upstream/fix/oauth-reconnect-session-storage",
+      "upstream/fix/provider/color-scheme",
+      "upstream/fix/python/langchain-adapter-pickle-issue-734",
+      "upstream/fix/remove-dead-typescript-precommit-hook",
+      "upstream/fix/revert-strip-internal",
+      "upstream/fix/switching-env-causes-broken-state",
+      "upstream/fix/tel/suppress-errors",
+      "upstream/fix/template-sdk-typing-issues",
+      "upstream/fix/useffect-servers",
+      "upstream/fix/widget-dev-deps-504",
+      "upstream/fix/windows/builde",
+      "upstream/inspector-theme-toggle",
+      "upstream/inspector-ui-improvements",
+      "upstream/inspector-ui-improvements-v2",
+      "upstream/khandrew1/auth0-fixes",
+      "upstream/khandrew1/better-auth-provider",
+      "upstream/khandrew1/fix-duplicate-oauth-callback",
+      "upstream/khandrew1/fix-inspector-telemetry",
+      "upstream/main",
+      "upstream/major/cli/device-flow",
+      "upstream/python/feat/langchain-structured",
+      "upstream/refactor-base-paths",
+      "upstream/refactor/oauth-client-provider-session-store",
+      "upstream/release/exit-prerelease-1774267832",
+      "upstream/release/exit-prerelease-1774426783",
+      "upstream/release/exit-prerelease-1774444630",
+      "upstream/release/exit-prerelease-1774599582",
+      "upstream/release/exit-prerelease-1775817092",
+      "upstream/release/exit-prerelease-1775820383",
+      "upstream/release/exit-prerelease-1776281341",
+      "upstream/release/exit-prerelease-1776759800",
+      "upstream/release/exit-prerelease-1776945636",
+      "upstream/release/exit-prerelease-1777403537",
+      "upstream/release/exit-prerelease-1777541034",
+      "upstream/release/exit-prerelease-1778109641",
+      "upstream/release/exit-prerelease-1778518512",
+      "upstream/release/exit-prerelease-1778768699",
+      "upstream/revert-1292-major/cli/device-flow",
+      "upstream/revert-1465-docs/fix-broken-readme-links",
+      "upstream/screenshot-error-tool",
+      "upstream/widgets/new-dx",
+      "upstream/worktree-mcp-1387",
+      "upstream/worktree-mcp-1899",
+      "widgets/new-dx",
+      "worktree-mcp-1387",
+      "worktree-mcp-1899"
+    ],
+    "commitFormat": {
+      "conventional": true,
+      "confidence": 0.72,
+      "sampleSize": 50
+    },
+    "branchPatterns": {
+      "prefixes": {
+        "chore/": 1,
+        "feat/": 7,
+        "fix/": 2
+      },
+      "primary": "feat/"
+    },
+    "hooks": {
+      "preCommit": {
+        "exists": false,
+        "runsTests": false,
+        "runsLint": false,
+        "runsTypecheck": false
+      }
+    },
+    "mergeStrategy": {
+      "strategy": "mixed",
+      "confidence": 0.5
+    },
+    "coAuthor": {
+      "detected": true,
+      "pattern": "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+    },
+    "recentActivity": {
+      "windowDays": 30,
+      "highChurnFiles": [
+        {
+          "path": "libraries/typescript/packages/inspector/src/client/components/MCPAppsRenderer.tsx",
+          "commits": 2
+        },
+        {
+          "path": "libraries/typescript/packages/mcp-use/src/auth/browser-provider.ts",
+          "commits": 2
+        },
+        {
+          "path": "libraries/typescript/packages/mcp-use/src/server/mcp-server.ts",
+          "commits": 2
+        },
+        {
+          "path": "libraries/typescript/packages/mcp-use/src/telemetry/telemetry-browser.ts",
+          "commits": 2
+        },
+        {
+          "path": "libraries/typescript/packages/mcp-use/examples/server/ui/mcp-ui/index.ts",
+          "commits": 2
+        },
+        {
+          "path": "libraries/typescript/packages/cli/src/commands/auth.ts",
+          "commits": 1
+        },
+        {
+          "path": "libraries/typescript/packages/cli/src/commands/client-auth.ts",
+          "commits": 1
+        },
+        {
+          "path": "libraries/typescript/packages/cli/src/commands/client.ts",
+          "commits": 1
+        },
+        {
+          "path": "libraries/typescript/packages/cli/src/commands/deployments.ts",
+          "commits": 1
+        },
+        {
+          "path": "libraries/typescript/packages/cli/src/commands/env.ts",
+          "commits": 1
+        }
+      ],
+      "activeContributors": 8,
+      "weeklyCommits": [
+        0,
+        1,
+        10,
+        5
+      ]
+    }
+  },
+  "monorepo": {
+    "isMonorepo": false,
+    "tool": null,
+    "packages": [],
+    "primaryPackage": null
+  },
+  "surfaces": [],
+  "externalServices": [],
+  "schemas": {},
+  "secrets": {
+    "envFileExists": false,
+    "envExampleExists": false,
+    "gitignoreCoversEnv": true
+  },
+  "projectProfile": {
+    "type": "unknown",
+    "hasExternalAPIs": false,
+    "hasDatabase": false,
+    "hasBrowserUI": false,
+    "hasAuthSystem": false,
+    "hasPayments": false,
+    "hasFileStorage": false
+  },
+  "blindSpots": [
+    {
+      "area": "Testing",
+      "issue": "166 test files found but test framework not identified in dependencies",
+      "resolution": "Scanner may not recognize your test framework. Informational — your tests still work."
+    }
+  ],
+  "findings": [
+    {
+      "id": "hardcoded-secret",
+      "severity": "pass",
+      "title": "No hardcoded secrets detected",
+      "detail": "Checked: Stripe, OpenAI, Anthropic, AWS, GitHub, database URLs, Resend, SendGrid, Twilio",
+      "category": "security"
+    },
+    {
+      "id": "env-hygiene",
+      "severity": "pass",
+      "title": "No environment config detected",
+      "detail": null,
+      "category": "quality"
+    }
+  ],
+  "deployment": {
+    "platform": null,
+    "configFile": null,
+    "ci": "GitHub Actions",
+    "ciWorkflowFiles": [
+      "approve-fork-pr.yml",
+      "auto-label.yml",
+      "ci.yml",
+      "claude.yml",
+      "conformance-comment.yml",
+      "conformance.yml",
+      "create-app-e2e-canary.yml",
+      "dependabot-changesets.yml",
+      "docs.yml",
+      "everything-typecheck.yml",
+      "inspector-e2e-sequential.yml",
+      "inspector-e2e.yml",
+      "links.yml",
+      "pr-labeler.yml",
+      "python-release.yml",
+      "railway-deploy.yml",
+      "stale.yml",
+      "sync-inspector.yml",
+      "test-release-notifications.yml",
+      "typescript-pr-preview.yml",
+      "typescript-release.yml",
+      "update-mcp-sdk-fork.yml"
+    ]
+  },
+  "patterns": {
+    "sampledFiles": 750,
+    "detectionTime": 0,
+    "threshold": 0.7
+  },
+  "conventions": {
+    "naming": {
+      "files": {
+        "majority": "kebab-case",
+        "confidence": 0.34564643799472294,
+        "mixed": true,
+        "distribution": {
+          "snake_case": 0.24598930481283424,
+          "camelCase": 0.09090909090909091,
+          "PascalCase": 0.31283422459893045,
+          "kebab-case": 0.3502673796791444
+        },
+        "sampleSize": 750
+      },
+      "functions": {
+        "majority": "camelCase",
+        "confidence": 0.6651162790697674,
+        "mixed": true,
+        "distribution": {
+          "snake_case": 0.2247086247086247,
+          "camelCase": 0.6666666666666666,
+          "PascalCase": 0.10815850815850817,
+          "SCREAMING_SNAKE_CASE": 0.0004662004662004662
+        },
+        "sampleSize": 2640
+      },
+      "classes": {
+        "majority": "PascalCase",
+        "confidence": 0.982089552238806,
+        "mixed": false,
+        "distribution": {
+          "camelCase": 0.0030303030303030303,
+          "PascalCase": 0.996969696969697
+        },
+        "sampleSize": 330
+      },
+      "variables": {
+        "majority": "camelCase",
+        "confidence": 0.747668780305856,
+        "mixed": false,
+        "distribution": {
+          "snake_case": 0.1838715699085309,
+          "camelCase": 0.7483666231099496,
+          "PascalCase": 0.018107149523987308,
+          "SCREAMING_SNAKE_CASE": 0.0496546574575322
+        },
+        "sampleSize": 9069
+      },
+      "constants": {
+        "majority": "SCREAMING_SNAKE_CASE",
+        "confidence": 0.981549815498155,
+        "mixed": false,
+        "distribution": {
+          "SCREAMING_SNAKE_CASE": 1
+        },
+        "sampleSize": 266
+      }
+    },
+    "imports": {
+      "style": "mixed",
+      "confidence": 0,
+      "distribution": {
+        "absolute": 0,
+        "relative": 0
+      },
+      "aliasPattern": null
+    },
+    "indentation": {
+      "style": "spaces",
+      "width": 2,
+      "confidence": 1
+    },
+    "codePatterns": {
+      "emptyCatches": {
+        "empty": 0,
+        "commented": 0,
+        "total": 0
+      },
+      "defaultExports": {
+        "count": 0,
+        "totalFiles": 30
+      },
+      "nullStyle": {
+        "nullCount": 0,
+        "optionalCount": 0,
+        "preference": "mixed"
+      }
+    },
+    "sampledFiles": 750,
+    "detectionTime": 1136
+  },
+  "readme": {
+    "description": "mcp-use is the fullstack MCP framework\n  to build MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.\n\n- **Build** with mcp-use SDK ([ts](https://www.npmjs.com/package/mcp-use) | [py](https://pypi.org/project/mcp_use/)): MCP Servers and MCP Apps\n- **Preview** on mcp-use MCP Inspector ([online](https://inspector.mcp-use.com/inspector) | [oss](https://github.com/mcp-use/mcp-use/tree/main/libraries/typescript/packages/inspector)): Test and debug your MCP Servers and Apps\n- **Deploy** on [Manufact MCP Cloud](https://manufact.com): Connect your GitHub repo and have your MCP Server and App up and running in production with observability, metrics, logs, branch-deployments, and more",
+    "architecture": null,
+    "setup": null,
+    "source": "heading"
+  },
+  "documentation": {
+    "files": [
+      {
+        "path": "README.md",
+        "category": "project-docs",
+        "sizeBytes": 23011,
+        "lastModifiedDays": 24
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "category": "guides",
+        "sizeBytes": 10465,
+        "lastModifiedDays": 163
+      },
+      {
+        "path": "SECURITY.md",
+        "category": "guides",
+        "sizeBytes": 1075,
+        "lastModifiedDays": 32
+      },
+      {
+        "path": "CODE_OF_CONDUCT.md",
+        "category": "guides",
+        "sizeBytes": 5215,
+        "lastModifiedDays": 128
+      },
+      {
+        "path": ".github/PULL_REQUEST_TEMPLATE.md",
+        "category": "templates",
+        "sizeBytes": 2284,
+        "lastModifiedDays": 0
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE",
+        "category": "templates",
+        "sizeBytes": 0,
+        "lastModifiedDays": 225
+      }
+    ],
+    "docsDirectory": {
+      "path": "docs/",
+      "fileCount": 240,
+      "formats": [
+        "md",
+        "mdx"
+      ],
+      "indexFile": "docs/README.md",
+      "framework": null
+    },
+    "landingPage": null
+  },
+  "secretFindings": null,
+  "envVarMap": null,
+  "duplicates": null,
+  "circularDeps": null,
+  "orphanFiles": null,
+  "complexityHotspots": null,
+  "gitIntelligence": null,
+  "dependencyIntelligence": null,
+  "technicalDebtMarkers": null,
+  "inconsistencies": null,
+  "conventionBreaks": null,
+  "aiReadinessScore": null
+}
